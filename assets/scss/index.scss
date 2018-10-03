@@ -11,12 +11,13 @@ body {
     flex-direction: row;
     background-image:linear-gradient(limegreen, lightblue);
     background-repeat: no-repeat;
+    position: relative;
     nav{
         
         ul {
             li {
                 a {
-
+                    color: white;
                 }
             }
         }
@@ -24,25 +25,43 @@ body {
     }
     .jumbotron {
         background-image: url("../img/sushi.jpg");
-            }
-
-    h1{
-
-        font-size: 18px;
-        color: brown;
-        }
-        .lead{
-            text-align: center;
-            font-size:16px;
-            color: brown;
-        }
-        p{
+        text-align: center;
+        margin:0;
+        .display-4{
             
-            font-size:16px;
+            font-size: 18px;
             color: brown;
-            a {
-                
-                color:white;
+            }
+            .lead{
+                font-size:16px;
+                color: brown;
             }
         }
+
+        .carousel-content {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            z-index: 20;
+            color: white;
+            font-size: 26px;
+            text-shadow: 0 2px 2px rgba(0,0,0,.6);
+            
+          }
+
+    .footer{
+        text-align: center;
+        .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .testtest{
+                font-size: 16px;
+                margin: 0;
+                padding:0;
+                color: white;
+            }
+        }
+    }      
 }
+

@@ -18,18 +18,43 @@ body {
   background-image: -webkit-linear-gradient(limegreen, lightblue);
   background-image: -o-linear-gradient(limegreen, lightblue);
   background-image: linear-gradient(limegreen, lightblue);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
+  body nav ul li a {
+    color: white; }
   body .jumbotron {
-    background-image: url("../img/sushi.jpg"); }
-  body h1 {
-    font-size: 18px;
-    color: brown; }
-  body .lead {
+    background-image: url("../img/sushi.jpg");
     text-align: center;
-    font-size: 16px;
-    color: brown; }
-  body p {
-    font-size: 16px;
-    color: brown; }
-    body p a {
-      color: white; }
+    margin: 0; }
+    body .jumbotron .display-4 {
+      font-size: 18px;
+      color: brown; }
+    body .jumbotron .lead {
+      font-size: 16px;
+      color: brown; }
+  body .carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    font-size: 26px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6); }
+  body .footer {
+    text-align: center; }
+    body .footer .column {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body .footer .column .testtest {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        color: white; }
