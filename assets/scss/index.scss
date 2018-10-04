@@ -1,7 +1,9 @@
+$colorbot:white;
 *{
     box-sizing: border-box;
 }
 body {
+    color: $colorbot;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -12,20 +14,19 @@ body {
     background-image:linear-gradient(limegreen, lightblue);
     background-repeat: no-repeat;
     position: relative;
-    nav{
-        
-        ul {
-            li {
-                a {
-                    color: white;
-                }
-            }
-        }
-
+    a {
+        color:$colorbot;
+        text-decoration:none;
+        list-style: none;
     }
+    
     .jumbotron {
         background-image: url("../img/sushi.jpg");
         text-align: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 100%;
         margin:0;
         .display-4{
             
@@ -48,20 +49,14 @@ body {
             text-shadow: 0 2px 2px rgba(0,0,0,.6);
             
           }
+        .events{
+           color: black;
+        }  
 
-    .footer{
-        text-align: center;
-        .column{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .testtest{
-                font-size: 16px;
-                margin: 0;
-                padding:0;
-                color: white;
-            }
-        }
-    }      
-}
+        .footer{
+            line-height: 0.5;
+            bottom: 0;
+        }          
+}      
+
 
