@@ -5,8 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <!-- link -->
+
+    <!-- link -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -15,7 +17,7 @@
 </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg  bg-dark">
             <a class="navbar-brand" href="index.html"><figure><img src="assets/img/logo.png" alt="SushiTime"></figure></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,46 +39,65 @@
                 </ul>
             </div>
         </nav>
-<!--Content-->
-<!--Image-->
-    <div class="image">
-        <div class="col-12 col-md-12 col-xs-12">
-            <h1 class="display-4  d-flex justify-content-center">Poulet soba</h1>
-            <hr class="my-4">
-            <p class="lead d-flex justify-content-center">Pour seulement 10€ </p>
-          </div>
-    </div>
-<!--Menu-->
-    <div class="menu">
-        <div class="row text-center">
-            <div class="col-12 col-md-12 col-xs-12">
-                <h3>Les différents Sets disponibles:</h3>
-            </div>
-            <div class="col-12 col-md-12 col-xs-12 col-lg-4 col-xl-4">
-                <div class="list-group text-center">
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark active">
-                           A.sushis (16 pieces)
-                            <span class="badge badge-success">10€</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-                                B.sushis (32 pieces)
-                                <span class="badge badge-success">20€</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-                               C.sushis (8 pieces) + un Soba (tori tatsua soba, poulet soba, tempura soba)
-                                <span class="badge badge-success">16€</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-                                D.sushis familial saumon (68 pieces)
-                                <span class="badge badge-success">43€</span>
-                        </a>
-                </div>
-            </div>
+<!--Jumbotron-->    
+        <div class="jumbotron col-12 col-md-12 col-xs-12 contact">
+            <h1 class="display-4">Vous avez des questions? </h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <p class="lead">Ou vous voulez juste nous donnez votre opinion? Faites le ici !</p>
         </div>
-    </div>
+<!--Formulaire-->
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <i class="fas fa-user-secret"></i>
+                        <label for="InputLastName">Nom :</label>
+                        <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                    <div class="col">
+                        <i class="fas fa-user-secret"></i>
+                        <label for="InputFirstName">Prénom :</label>
+                        <input type="text" class="form-control" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fab fa-mandalorian"></i>
+                    <label for="InputEmail">Email address :</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <i class="far fa-grin-wink"></i>
+                    <label for="InputFeedback">Feedback :</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Amélioration</option>
+                        <option>Retour</option>
+                        <option>Comande</option>
+                        <option>Question</option>
+                        <option>Plaintes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-bullhorn"></i>
+                    <label for="InputTextCustomers">Donnez votre avis :</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-auto my-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">
+                        Recevoir une copie du messages par e-mail.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Envoyez</button>
+                </div>
+            </form>
+        </div>  
     <!--footer-->
     <footer class="section footer-classic context-dark bg-dark d-flex justify-content-around">
-        <div class="container row row-30 col-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">
+        <div class="container row row-30 ">
             <div class="col-4 col-md-4 col-xs-4">
                 <div class="pr-xl-4">
                     <a class="brand " href="index.html"><h4>Infos</h4></a>

@@ -3,7 +3,7 @@
   box-sizing: border-box; }
 
 body {
-  color: white;
+  color: whitesmoke;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -15,30 +15,43 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(lightblue));
-  background-image: -webkit-linear-gradient(limegreen, lightblue);
-  background-image: -o-linear-gradient(limegreen, lightblue);
-  background-image: linear-gradient(limegreen, lightblue);
+  background-color: crimson;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  font-family: 'Lobster', cursive; }
   body a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     list-style: none; }
-  body .jumbotron {
-    background-image: url("../img/sushi.jpg");
-    text-align: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 50vh;
+  body .index {
+    background-image: url(../img/jumbotron.png);
+    background-size: cover;
+    height: 100%;
     width: 100%;
     margin: 0; }
-    body .jumbotron .display-4 {
-      font-size: 18px;
-      color: brown; }
-    body .jumbotron .lead {
-      font-size: 16px;
-      color: brown; }
+    body .index .display-4 {
+      color: whitesmoke; }
+    body .index .lead {
+      color: whitesmoke; }
+  body figure {
+    padding: 0;
+    margin: 0; }
+  body .contact {
+    background-image: url(../img/contact.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0; }
+    body .contact .display-4 {
+      color: whitesmoke; }
+    body .contact .lead {
+      color: whitesmoke; }
+  body .image {
+    background-image: url("../img/poulet_soba.jpg");
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 250px 0; }
   body .carousel-content {
     position: absolute;
     bottom: 10%;
@@ -48,7 +61,8 @@ body {
     font-size: 26px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6); }
   body .events {
-    color: black; }
+    color: black;
+    padding: 0; }
   body .footer {
     line-height: 0.5;
     bottom: 0; }

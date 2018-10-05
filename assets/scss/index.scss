@@ -1,4 +1,4 @@
-$colorbot:white;
+$colorbot:whitesmoke;
 *{
     box-sizing: border-box;
 }
@@ -11,34 +11,55 @@ body {
     display: block;
     justify-content:space-around;
     flex-direction: row;
-    background-image:linear-gradient(limegreen, lightblue);
+    background-color: crimson;
     background-repeat: no-repeat;
     position: relative;
+    font-family: 'Lobster', cursive;
     a {
         color:$colorbot;
         text-decoration:none;
         list-style: none;
     }
     
-    .jumbotron {
-        background-image: url("../img/sushi.jpg");
-        text-align: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        height: 50vh;
+   .index {
+        background-image: url(../img/jumbotron.png);
+        background-size: cover;
+        height: 100%;
         width: 100%;
         margin:0;
         .display-4{
             
-            font-size: 18px;
-            color: brown;
+            color:$colorbot;
             }
             .lead{
-                font-size:16px;
-                color: brown;
+                color:$colorbot;
             }
         }
-
+    figure{
+        padding: 0;
+        margin: 0;
+    }
+    .contact{
+        background-image: url(../img/contact.png);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        margin:0;
+        .display-4{
+            
+            color:$colorbot;
+            }
+            .lead{
+                color:$colorbot;
+            }
+        }
+        .image {
+            background-image: url("../img/poulet_soba.jpg");
+            background-size: cover;
+            width: 100%;
+            margin:0;
+            padding: 250px 0;
+        }
         .carousel-content {
             position: absolute;
             bottom: 10%;
@@ -51,6 +72,7 @@ body {
           }
         .events{
            color: black;
+           padding:0;
         }  
 
         .footer{
@@ -58,5 +80,4 @@ body {
             bottom: 0;
         }          
 }      
-
 

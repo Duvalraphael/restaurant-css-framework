@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- link Bootstrap CSS -->
+    <!-- link-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -15,8 +16,8 @@
 </head>
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg  bg-succes">
-            <a class="navbar-brand" href="index.html"><!-- <img src="assets/img/sushitime.svg" alt="Logo"--></a>
+    <nav class="navbar navbar-expand-lg  bg-dark">
+            <a class="navbar-brand" href="index.html"><figure><img src="assets/img/logo.png" alt="SushiTime"></figure></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,7 +27,7 @@
                         <a class="nav-link testtest" href="carte.html">Carte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link testtest" href="photo.html">Photos</a>
+                        <a class="nav-link testtest" href="photo1.html">Photos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link testtest" href="restaurant.html">Restaurant</a>
@@ -38,7 +39,7 @@
             </div>
         </nav>
     <!--Jumbotron-->
-    <div class="jumbotron col-12 col-md-12 col-xs-12 ">
+    <div class="jumbotron col-12 col-md-12 col-xs-12 index">
             <h1 class="display-4">Le meilleur restaurants de sushis !</h1>
             <p class="lead"></p>
             <hr class="my-4">
@@ -46,54 +47,64 @@
             <a class="btn btn-primary btn-lg" href="carte.html" role="button">Le menu!</a>
           </div>
     <!--News and events-->
-    <div class="col-12 col-md-12 col-xs-12 row">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <p class="carousel-content">Arrivée d'un nouveau restaurant dans charleroi!!!!<span class="badge badge-secondary">New</span></p>
-                    <img class="d-block w-100" src="assets/img/charleroi-965622_640.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <p class="carousel-content">Nouvelle arrivage de set !!<span class="badge badge-secondary">New</span></p>
-                    <img class="d-block w-100" src="assets/img/sushis.jpg" alt="Second slide">
-                  </div> 
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-        <div class="col-12 col-md-6 col-xs-6 row events">
-           <ul class="list-group ">
-                <li class="list-group-item events">Evénements :</li>
-                <li class="list-group-item list-group-item-info">Ouverture de la franchise charleroi le 12 octobre.</li>
-                <li class="list-group-item list-group-item-dark">
-                    <p> Réduction de 5% pour toute commande dépassant un montant de 25€ et 10% pour 50€
-                        lors de notre semaine d'ouverture (12/10/2018 => 19/10/2018) de Sushi Time charleroi.
-                        Venez nombreux !!!</p>
-                </li>
-                <li class="list-group-item list-group-item-info">
-                    <p>
-                        Cette semaine Sushi Time s'engage a reversez un pourcentage sur votre menu pour la cause animal.
-                        Nous avons déja remplis un quart du budget a atteindre grâce à vous merci. 
-                        Pour plus de renseignement:
-                    </p>
-                    <a href="https://wwf.be/fr/" target="_blank" class="btn success"> <input type="button" value="Clique"> </a>
-                </li>
-            </ul>
-            <div class="progress col-12 col-md-6 col-xs-6">
-                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+    <div class="container-fluid">
+        <div class="col-12 col-md-12 col-xs-12 row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="carousel-content">Arrivée d'un nouveau restaurant dans charleroi!!!!<span class="badge badge-secondary">New</span></p>
+                        <img class="d-block w-100" src="assets/img/charleroi.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="carousel-content">Nouvelle arrivage de set !!<span class="badge badge-secondary">New</span></p>
+                        <img class="d-block w-100" src="assets/img/sushis.jpg" alt="Second slide">
+                    </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+            </div>
+            <div class="col-12 col-md-6 col-xs-6 row events">
+                <ul class="list-group ">
+                    <li class="list-group-item events">Evénements :</li>
+                    <li class="list-group-item list-group-item-info">Ouverture de la franchise charleroi le 12 octobre.</li>
+                    <li class="list-group-item list-group-item-dark">
+                        <p> Réduction de 5% pour toute commande dépassant un montant de 25€ et 10% pour 50€
+                                lors de notre semaine d'ouverture (12/10/2018 => 19/10/2018) de Sushi Time charleroi.
+                                Venez nombreux !!!</p>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <p>
+                            Pour l'inoguration de notre nouveau restaurant à Charleroi Sushi Time Mons est rebaptisé Sushi Flower
+                            Venez nombreux !!
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-dark">
+                        <p>Aidez nous à trouver un nouveau logo pour notre branche de Mons.
+                            Envoyez vos idée par notre rubrique contact 
+                        </p>
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                        <p>
+                                Cette semaine Sushi Time s'engage a reversez un pourcentage sur votre menu pour la cause animal.
+                                
+                                Pour plus de renseignement:
+                            <a href="https://wwf.be/fr/" target="_blank" class="btn success"> <input type="button" value="Clique"> </a>
+                            <p>Nous avons déja remplis un quart du budget a atteindre grâce à vous merci. </p>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
-
     </div>
     <!--footer-->
     <footer class="section footer-classic context-dark bg-dark d-flex justify-content-around">
@@ -117,7 +128,7 @@
                         <a class="nav-link testtest col-3 col-md-3 col-xs-3" href="carte.html">Carte</a>
                     </li>
                     <li>
-                        <a class="nav-link testtest col-3 col-md-3 col-xs-3" href="photo.html">Photos</a>
+                        <a class="nav-link testtest col-3 col-md-3 col-xs-3" href="photo1.html">Photos</a>
                     </li>
                     <li>
                         <a class="nav-link testtest col-3 col-md-3 col-xs-3" href="restaurant.html">Restaurant</a>
